@@ -1,96 +1,113 @@
-\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[hmargin={2.5cm,2.0cm}, vmargin={2.7cm,2cm}]{geometry}
-\usepackage{paralist}
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[hmargin={2.5cm,2.0cm}, vmargin={2.7cm,2cm}]{geometry} % Document margins
+\usepackage[pdftex,colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage[english,printdayoff]{isodate}
+\usepackage{tabularx}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{graphicx}
-\usepackage{sectsty}
-\usepackage[pdftex,colorlinks=true,urlcolor=blue]{hyperref}
-
-\allsectionsfont{\raggedright}
 
 \newcommand{\myemail}{andrey.rjeutski@outlook.com}
 \newcommand{\minsk}{Minsk, Belarus}
-\newcommand{\periodinminsk}[1]{{\footnotesize #1 in \minsk}}
-\newcommand{\jobattributes}[1]{\periodinminsk{#1}{\footnotesize \newline Software Developer}}
 
 \begin{document}
-  \pagenumbering{gobble}
-  \begin{minipage}{0.69\textwidth}
-    \begin{centering}
-      {\Huge Andrey Rjeutski}
 
-      Born 1989-04-08 in \minsk\\
-      \href{mailto:\myemail}{\myemail}\\
-      +49 1575 7742255\\
-      Occamstraße 21\\ 
-      80802 Munich
-      
-    \end{centering}
-  \end{minipage}
-  \begin{minipage}{0.3\textwidth}
-    \includegraphics[width=0.95\textwidth]{photo}
-  \end{minipage}
-  
-  \vspace{0.5cm}
-  \begin{minipage}[t]{0.34\textwidth}
-    \section*{Education} 
-    \subsection*{Belarusian State University}
-    Faculty of Applied Math and Computer Science\\
-    \periodinminsk{2007 to 2012}
-    \section*{Links} 
-    \href{https://linkedin.com/in/andrey-rjeutski-92064741}{https://linkedin.com/in/andrey-rjeutski-92064741}\\
-    \href{https://stackoverflow.com/users/3506292/filhit}{https://stackoverflow.com/\allowbreak users/3506292/filhit}
-    \section*{Skills}
-    \subsection*{Languages}
-    Proficient in English.\\
-    Native Russian speaker.
-    \subsection*{Programming}
-    \subsubsection*{Major skills}
-    \begin{inparaitem}
-      \item C\# 
-      \item WPF
-      \item ASP .NET MVC
-      \item Git
-    \end{inparaitem}
-    \subsubsection*{Familiar}
-    \begin{inparaitem}
-      \item OpenXML
-      \item ADO .NET 
-      \item Linq to SQL
-      \item Entity Framework
-      \item MSSQL
-      \item CruiseControl.Net
-      \item SVN
-      \item TFVC
-      \item Perforce
-      \item HTML/CSS
-      \item JavaScript
-      \item Java
-      \item C++
-      \item Delphi
-    \end{inparaitem}
-  \end{minipage}
-  \hfill
-  \begin{minipage}[t]{0.55\textwidth}
-    \section*{Experience}
-    \subsection*{\href{http://www.issoft.by/}{ISsoft}}
-    \jobattributes{\daterange{2012-01-01}{2015-05-01}}
-    \begin{itemize}
-      \item Coded Microsoft Word add-ins for legal and life sciences industries.
-      \item Implemented the test harness. Time to stabilize a release was reduced from six to two weeks.
-      \item Changed the application to be fast and modern looking. A survey has shown that the most of the customers liked the new look and feel.
-      \item Built a desktop application for interest calculation.
-      \item Designed an algorithm to calculate values that were missing in the data exported from the old system. The old system was successfully replaced on time.
-      \item Developed a SaaS solution to manage and monitor backups online.
-    \end{itemize}
-    \subsection*{\href{http://www.itransition.com/}{Itransition}}
-    \jobattributes{\daterange{2010-11-01}{2011-12-01}}
-    \begin{itemize}
-      \item Created a system to present data in charts and tables. Reports were available online and as PDF, PowerPoint and Excel documents.
-    \end{itemize}
-  \end{minipage}
+\printname{Andrey Rjeutski}
+\printaddress{+49 1575 7742255 \\ \href{mailto:\myemail}{\myemail}}
+\printaddress{Born 1989-04-08 in \minsk}
+\printaddress{Occamstraße 21 \\ 80802 Munich}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}
+{\href{http://www.issoft.by/}{ISsoft}}
+{\daterange{2012-01-01}{2015-05-01}}
+{Software Developer}
+{\minsk}
+\item Coded Microsoft Word add-ins for legal and life sciences industries.
+\item Implemented the test harness. Time to stabilize a release was reduced from six to 
+two weeks.
+\item Changed the application to be fast and modern looking. A survey has shown that the 
+most of the customers liked the new look and feel.
+\item Built a desktop application for interest calculation.
+\item Designed an algorithm to calculate values that were missing in the data exported 
+from the old system. The old system was successfully replaced on time.
+\item Developed a SaaS solution to manage and monitor backups online.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}
+{\href{http://www.itransition.com/}{Itransition}}
+{\daterange{2010-11-01}{2011-12-01}}
+{Software Developer}
+{\minsk}
+\item Created a system to present data in charts and tables. Reports were available 
+online and as PDF, PowerPoint and Excel documents.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf Belarusian State University}\hfill \daterange{2007-09-01}{2012-07-01} \\
+Faculty of Applied Math and Computer Science\hfill {\em \minsk}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabularx}{\linewidth}{ @{} >{\bfseries}l @{\hspace{6ex}} X }
+Languages & Proficient in English, native Russian speaker \\
+Major skills & C\#, WPF, ASP .NET MVC, Git \\
+Familiar & OpenXML, ADO .NET, Linq to SQL, Entity Framework, MSSQL, Cruise\-Control.Net, 
+SVN, TFVC, Perforce, HTML/CSS, JavaScript, Java, C++, Delphi
+\end{tabularx}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	LINKS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Links}
+\href{https://linkedin.com/in/andrey-rjeutski-92064741}
+{https://linkedin.com/in/andrey-rjeutski-92064741}\\
+\href{https://stackoverflow.com/users/3506292/filhit}
+{https://stackoverflow.com/users/3506292/filhit}
+\end{rSection}
+
 \end{document}
