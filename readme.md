@@ -4,4 +4,4 @@
 
 # Build Prerequisites 
 
-* `choco install miktex`
+`choco install miktex`
