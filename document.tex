@@ -22,23 +22,28 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-\usepackage[hmargin={2.5cm,2.0cm}, vmargin={2.7cm,2cm}]{geometry} % Document margins
+\usepackage[hmargin={2.5cm,2.0cm}, vmargin={2.1cm,2cm}]{geometry} % Document margins
 \usepackage[pdftex,colorlinks=true,urlcolor=blue]{hyperref}
 \usepackage[english,printdayoff]{isodate}
 \usepackage{tabularx}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+\usepackage{graphicx}
 
 \newcommand{\myemail}{andrey.rjeutski@outlook.com}
 \newcommand{\minsk}{Minsk, Belarus}
 
 \begin{document}
 
+\begin{rHeader}{
 \printname{Andrey Rjeutski}
 \printaddress{+49 1575 7742255 \\ \href{mailto:\myemail}{\myemail}}
 \printaddress{Eligible to work in Germany for any employer}
 \printaddress{Occamstraße 21 \\ 80802 Munich}
+}
+\includegraphics[width=0.95\textwidth]{photo.jpg}
+\end{rHeader}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
