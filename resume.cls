@@ -32,16 +32,6 @@
 %	HEADINGS COMMANDS: Commands for printing name and address
 %----------------------------------------------------------------------------------------
 
-% Defines the rHeader environment for the header
-\newenvironment{rHeader}[1]{ % 1 input argument - text  
-  \begin{minipage}{0.79\textwidth}
-    #1
-  \end{minipage}
-  \begin{minipage}{0.2\textwidth}
-}{
-  \end{minipage}
-}
-
 \def \addressSep {$\diamond$} % Set default address separator to a diamond
 
 % \printaddress is used to style an address line (given as input)
